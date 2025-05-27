@@ -1,15 +1,15 @@
 
 def regular_argument():
     a = int(input())
-    a = a // 2
-    return a
+    return a // 2
 def bai():
-    b = int(input())
-    b = b*4
-    return b
+    b = regular_argument()
+    return b * 4
 x = regular_argument()
 y = bai()
 print(x, y)
+
+
 
 
 

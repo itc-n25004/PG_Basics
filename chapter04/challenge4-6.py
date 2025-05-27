@@ -12,3 +12,4 @@ perm:a:int.
 return:a
 bai():
 perm:b:int.
+"""
