@@ -1,12 +1,15 @@
-q = ["7","11","13","1001"]
+q = [7,11,13,1001]
 i = 0
 while True:
-    numeric_quiz = input("数字をいれてください")
-    if numeric_quiz == q[i]:
-        print("正解")
+    number_quiz = input("数字をいれてください")
+    if "q" == number_quiz:
         break
-    elif numeric_quiz == "q":
+    try:
+        number_quiz = int(number_quiz)
+    except ValueError:
+        print("数字を入力するか、ｑを入れてくだいさい")
+    if number_quiz in q:
+        print("正解")
         break
     else:
         print("不正解")
-    i = (i+1)%3
